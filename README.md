@@ -35,38 +35,45 @@ Decision Record: [POS Integration Design](adrs/pos-integration.md)
 
 ![Component Diagram](image/component-arch-diagram.png)
 
-Vendor Registration
+#### Vendor Registration
 
 ![Vendor Sequence Diagram](sequence-diagrams/vendor.png)
 
-Kitchen Registration
+#### Kitchen Registration
 
 ![Kitchen Sequence Diagram](sequence-diagrams/kitchen.png)
 
-Adding Menu Items
+#### Adding Menu Items
 
 ![Menu Sequence Diagram](sequence-diagrams/menu.png)
 
-Kitchen Order Placement
+#### Kitchen Order Placement
 
 ![Kitchen Order Placement Diagram](sequence-diagrams/kitchen-order.png)
 
-Expiry Tracker 
+#### Expiry Tracker 
 
 ![Expiry Tracker Diagram](sequence-diagrams/expiry-tracker.png)
 
-Online Order Reservations
+#### Online Order Reservations
+
+Architecture Decisions:
+[Inventory Updates Communicaiton](adrs/inventory-reservations.md)
+[Payment Service Communication](adrs/payments-communication.md)
 
 ![Order Resevation Diagram](sequence-diagrams/reserve-meal.png)
 
-Purchasing Meal offline
+#### Purchasing Meal offline
+
+Architecture Decisions:
+[POS Integration](adrs/pos-integration.md)
 
 ![Purchase Meal Diagram](sequence-diagrams/purchase-items-and-send-survey.png)
 
-Create Surveys
+#### Create Surveys
 
 ![Create Surveys Diagram](sequence-diagrams/surveys.png)
 
-Create Coupons
+#### Create Coupons
 
 ![Create Coupons Diagram](sequence-diagrams/coupons-create.png)

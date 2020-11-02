@@ -28,4 +28,4 @@ Moving ahead with the **Serverless design** for the Farmacy Food Service.
 
 Decision Record: [POS Integration Design](ADRs/pos-integration.md)
 
-![POS Integration Architecture Diagram](image/POSIntegrationArchitectureDiagram.png)
+![POS Integration Architecture Diagram](image/POSIntegrationArchitecture.png)

@@ -1,6 +1,4 @@
 @startuml
-title: Management of Entities (5/5): Surveys - Creation
-
 
 actor "Admin" as A
 

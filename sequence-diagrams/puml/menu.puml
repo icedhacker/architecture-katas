@@ -1,11 +1,9 @@
 @startuml
-title: Management of Entities (2/5): Menus
 
 actor "Vendor" as V
 actor "Admin" as A
 actor "Customer" as U
 
-participant "Coupon Srv" as C
 participant "Menu Srv" as M
 
 A -> M: Add/Edit/Remove/Disable items in Menu

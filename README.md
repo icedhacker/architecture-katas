@@ -58,7 +58,9 @@ Decision Record: [POS Integration Design](adrs/pos-integration.md)
 #### Online Order Reservations
 
 Architecture Decisions:
+
 [Inventory Updates Communicaiton](adrs/inventory-reservations.md)
+
 [Payment Service Communication](adrs/payments-communication.md)
 
 ![Order Resevation Diagram](sequence-diagrams/reserve-meal.png)
@@ -66,6 +68,7 @@ Architecture Decisions:
 #### Purchasing Meal offline
 
 Architecture Decisions:
+
 [POS Integration](adrs/pos-integration.md)
 
 ![Purchase Meal Diagram](sequence-diagrams/purchase-items-and-send-survey.png)

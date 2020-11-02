@@ -1,0 +1,15 @@
+@startuml
+title: Management of Entities (1/5): Coupons - Create Coupon campain
+
+actor "Vendor" as V
+actor "Admin" as A
+actor "Customer" as U
+participant "Coupon Srv" as C
+participant "User profile Srv" as UP
+
+
+A -> C : Create coupon campain
+V -> C : Create coupon campain
+C -> UP : Gets involved user info
+C -> U : Sends notifications out to Users
+@enduml

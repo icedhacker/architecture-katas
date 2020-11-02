@@ -1,0 +1,19 @@
+@startuml
+title: Management of Entities (5/5): Surveys - Creation
+
+
+actor "Admin" as A
+
+actor "Kitchen" as K
+actor "Customer" as U
+
+participant "Surveys Srv" as Ssrv
+participant "User Profile" as CP
+participant "Order Service" as Osrv
+
+
+A -> Ssrv: Create Surveys
+Ssrv -> CP: Get customer data
+Ssrv -> Osrv: Get past orders per customer
+Ssrv -> U: Sends out surveys to eligible customers
+@enduml

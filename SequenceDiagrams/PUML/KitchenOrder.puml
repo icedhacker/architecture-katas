@@ -1,0 +1,26 @@
+@startuml
+actor Vendor as V
+actor Kitchen as K
+participant "Kitchen Order Manager" as KOM
+participant "Forecaster" as F
+participant "Tours" as T
+participant "Inventory Service" as I
+participant "Order Service" as O
+
+loop daily
+   F -> F : Forcast for day
+   F -> I : Current Inventory status
+   I -> F : Inventory Response
+   F -> O : Past Orders
+   O -> F : Past Order Response
+end
+V -> F : Get forcast for the day
+F -> V : forcast for the day
+V -> KOM : Place Kitchen Order
+K -> KOM : View Kitchen Order
+KOM -> K : Current Orders
+K -> KOM : Accept Orders
+K -> KOM : Order Ready
+KOM -> I : Update Inventory
+KOM -> T : Create Tour
+@enduml

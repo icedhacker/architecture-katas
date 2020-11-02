@@ -1,0 +1,9 @@
+@startuml
+title: Management of Entities (3/5): Kitchens
+
+actor "Vendor" as V
+participant "Locations" as L
+
+
+V->L: Add/Edit/Remove/Disable Kitchens
+@enduml

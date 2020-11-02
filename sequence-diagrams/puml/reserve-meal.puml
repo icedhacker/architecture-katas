@@ -1,5 +1,4 @@
 @startuml
-title Reserve Meal
 actor Customer as C
 participant "User Profile Service" as U
 participant "Locations Service" as L

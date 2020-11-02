@@ -5,7 +5,7 @@ _REJECTED_
 
 ## Context
 
-- Farmacy Food is at the inception phase and the target is to hit 1000 user at the end of year, which will be initial load for the Farmacy food.
+- Farmacy Food is at the inception phase and the target is to hit 1000 users by the end of this year, which will be initial load for the Farmacy food service.
 - It will be needed to scale as the consumer base increases.
 - The load will fluctuate with time of the day, around meal times the demand can be higher.
 
@@ -19,19 +19,17 @@ All the system components will be implemented as a monolith with a single databa
 ## Consequences
 
 Postives: 
-- Easier to develop and start with as there will be one single respository
+- Easier to develop and start with, as there will be one single respository
 - Easier to test as there is less integration points
 - Simpler to deploy with one time configuration effort
 - Simpler to scale vertically
-- No major learning curve needed here
+- No major learning curve needed
 - Simple monitoring with single instance and a single database
 
 Negatives: 
 - Application becomes relatively large with time
 - Application growth means more complexity and slower start up time
 - Deployment of whole app with every update
-- Testing effort is higher with updates
-- CD is difficult
 - Low level of elasticity in scaling
 - Harder to adopt new technologies
 - One bug might lead to the whole app being down

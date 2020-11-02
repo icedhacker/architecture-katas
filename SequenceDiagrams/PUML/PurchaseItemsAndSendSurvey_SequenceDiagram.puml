@@ -5,34 +5,29 @@ actor POS
 
 participant "Coupon Service" as Co
 participant "Order Service" as O
-participant "Payment Service" as P
 participant "Inventory Service" as I
 participant "Survey Service" as S
 participant "User Profile Service" as U
 
-POS -> O: Create Order
+Cu -> POS: Purchase Items
 alt Customer has a coupon
- POS -> O: Apply Coupon code
- activate O
-  O -> Co: Validate Coupon
-  Co -> O: Coupon is Valid
-  O -> O: Apply Coupon
+  Cu -> POS: Apply Coupon Code
+  POS -> Co: Validate Coupon
+  Co -> POS: Coupon is Valid
 end
-deactivate O
+Cu -> POS: Offline Payment
 
-POS -> O: Initiate Payment
+O -> POS: Fetch Purchases
 activate O
- O -> P: Initiate Payment
- activate P
-  P -> O: Payment success
- deactivate P
- alt Customer has a coupon
+POS -> O: All recent purchases
+O -> O: Create Orders
+alt Customer has a coupon
   O -> Co: Mark coupon redeemed
- end
+end
  O -> I: Update Inventory
- O -> POS: Notify Success
- alt Customer is a member
-  O -> S: Order Completed Event
+
+alt Customer is a member
+ O -> S: Order Completed Event
 deactivate O
   activate S
    S -> U: Fetch user information

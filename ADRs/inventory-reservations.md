@@ -4,12 +4,12 @@
 _PROPOSED_
 
 ## Context
-Fharmacy food inventory service will be a critical component for all the operations in the entire system.
+Farmacy food inventory service will be a critical component for all the operations in the entire system.
 - Inventory numbers should be consitent for all the clients in the system.
-- When and Online Order is placed the inventory should be immiediatly reserved and should not be available for other users.
+- When an Online Order is placed, the inventory should be immiediatly reserved and should not be available for other users.
 - Tolerations:
-        - As Edge customer location (ie. POS or Smart Fridge) contains very limited number of serving of a perticuler type(<25) the system should not report over amounts that leads to reservation of items that are not available
-        - Qunatity updates that result in increasing the inventory can be delayed as it does not result in reservation of unavailable item.
+        - As Edge customer location (ie. POS or Smart Fridge) contains very limited number of serving of a perticuler type(<25) the system should not report over amounts that leads to reservation of items that are not available.
+        - Quantity updates that result in increasing the inventory can be delayed as it does not result in reservation of unavailable item.
 
 ## Decision
 

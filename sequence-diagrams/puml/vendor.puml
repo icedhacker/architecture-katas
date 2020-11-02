@@ -1,5 +1,4 @@
 @startuml
-title: Management of Entities (4/5): Vendors
 
 actor "Admin" as A
 actor "Vendor" as V

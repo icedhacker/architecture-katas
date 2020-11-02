@@ -5,31 +5,34 @@ _REJECTED_
 
 ## Context
 
-Microservices have been around for some while, and are a pretty well known pattern to build applications and digital services, but are they always the best pattern to go with.
+- Farmacy Food is at the inception phase and the target is to hit 1000 user at the end of year, which will be initial load for the Farmacy food.
+- It will be needed to scale as the consumer base increases.
+- The load will fluctuate with time of the day, around meal times the demand can be higher.
 
-On the other hand a Monolith isn’t a dated architecture that we need to leave in the past. In certain circumstances, a monolith is ideal.
+## Decision
 
-Monolithic architecture has some distinct pros:
-- Easier to develop and start with
-- Easier to test
-- Simpler to deploy
-- Simpler to scale horizontally
+Microservices have been around for some while, and are a pretty well known pattern to build applications and digital services, but are they always the best pattern to go with. On the other hand a Monolith isn’t a dated architecture that we need to leave in the past. In certain circumstances, a monolith is ideal.
+
+All the system components will be implemented as a monolith with a single database.
+
+
+## Consequences
+
+Postives: 
+- Easier to develop and start with as there will be one single respository
+- Easier to test as there is less integration points
+- Simpler to deploy with one time configuration effort
+- Simpler to scale vertically
 - No major learning curve needed here
+- Simple monitoring with single instance and a single database
 
-However there might also be some cons:
+Negatives: 
 - Application becomes relatively large with time
 - Application growth means more complexity and slower start up time
 - Deployment of whole app with every update
 - Testing effort is higher with updates
 - CD is difficult
-- Harder to scale
+- Low level of elasticity in scaling
 - Harder to adopt new technologies
 - One bug might lead to the whole app being down
 
-For the use case we have and for the business as a whole, adopting a monolithic architecture might still be a good pattern to consider. 
-The business size might not be huge for Microservices to be considered. It would just slow down the development of the solution and getting the system live. Also maintaining a huge number of services means more effort and cost that might not be worth it at the end.
-
-## Decision
-
-Monolithic architecture wasn't the best architecture to go with and the team found out that Serverless architecture would be a better fit to the business case.
-Please refer to the Serverless ADR for more info.

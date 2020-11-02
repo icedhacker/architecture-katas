@@ -1,0 +1,13 @@
+@startuml
+actor Admin as A 
+participant "Smart Fridge" as SF
+participant "Expiry Tracker" as ET
+Participant "Inventory" as I
+loop Daily
+  ET -> I : Get Expiring Items
+  I -> ET : Expiring Items
+  ET-> A : Notification
+end
+A -> SF: Remove Items(Manually)
+SF -> I: Update
+@enduml

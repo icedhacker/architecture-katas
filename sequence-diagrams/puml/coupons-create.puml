@@ -1,5 +1,4 @@
 @startuml
-title: Management of Entities (1/5): Coupons - Create Coupon campain
 
 actor "Vendor" as V
 actor "Admin" as A

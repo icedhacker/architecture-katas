@@ -18,15 +18,15 @@
 ![High Level Architecture Diagram](image/OverallArchitectureDiagram.png)
 
 Architecture Approach - Decision Records
-1. [Monolithic Design](ADRs/monolithic-approach.md)
-2. [Serverless Design](ADRs/serverless-approach.md)
+1. [Monolithic Design](adrs/monolithic-approach.md)
+2. [Serverless Design](adrs/serverless-approach.md)
 
 Moving ahead with the **Serverless design** for the Farmacy Food Service.
 
 ## Step 3
 ### Architecture of POS integration
 
-Decision Record: [POS Integration Design](ADRs/pos-integration.md)
+Decision Record: [POS Integration Design](adrs/pos-integration.md)
 
 ![POS Integration Architecture Diagram](image/POSIntegrationArchitecture.png)
 

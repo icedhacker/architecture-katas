@@ -1,0 +1,44 @@
+@startuml
+title Reserve Meal
+actor Customer as C
+participant "User Profile Service" as U
+participant "Locations Service" as L
+participant "Menu Service" as M
+participant "Order Service" as O
+participant "Inventory Service" as I
+participant "Payment Service" as P
+participant "Smart Fridge" as S
+
+C -> L: Search for nearby locations
+C -> M: Browse Menu at Location
+C -> I: Check Availability of Items from Menu
+
+alt Existing User
+ C -> U: User Authentication
+else Guest User
+ C -> U: Register Profile
+end
+U -> C: User Logged In
+
+C -> O: Request to reserve a meal
+O -> I: Check availability
+alt available
+ activate I
+   I -> I: Update Inventory Status to Reserved
+   I -> O: Notify Reserved
+ deactivate I
+ O -> P: Pre-authorize Payment
+ alt Payment Unsuccessful
+  P -> O: Payment Unsuccessful
+  O -> I: Un-Reserve Inventory
+  O -> C: Notify Unsuccessful Payment
+ else Payment Successful
+  P -> O: Payment Successful
+  O -> S: Reserve Meal
+  O -> C: Confirmation
+ end
+else unavailable
+ I -> O: Notify Unavailable
+ O -> C: Notify Unavailable
+end
+@enduml

@@ -31,7 +31,7 @@ The different options for communicating with the POS systems:
 2. REST API -> Configure API callbacks in the POS Systems.
 3. SOAP Services -> Fetch data from the POS System SOAP webservices.
 
-![Integration Component Diagram](../image/POSIntegrationArchitecture.png) "Integration Component Diagram"
+![Integration Component Diagram](../image/POSIntegrationArchitecture.png)
 
 As the integrator has to continuously be available to communicate with the Smart Fridge / POS Systems, the intergrator should be developed as micro-services and cannot follow the Serverless design which we will be using for our other components.
 

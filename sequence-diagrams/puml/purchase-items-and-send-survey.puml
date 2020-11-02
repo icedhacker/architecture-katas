@@ -1,5 +1,4 @@
 @startuml
-title Purchase Items
 actor Customer as Cu
 actor POS
 

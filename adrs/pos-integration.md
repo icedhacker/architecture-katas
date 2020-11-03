@@ -33,7 +33,11 @@ The different options for communicating with the POS systems:
 
 ![Integration Component Diagram](../image/POSIntegrationArchitecture.png)
 
-As the integrator has to continuously be available to communicate with the Smart Fridge / POS Systems, the intergrator should be developed as micro-services and cannot follow the Serverless design which we will be using for our other components.
+As the integrator has to continuously be available to communicate with the Smart Fridge / POS Systems, the intergrator should be developed as **micro-services** and should not follow the Serverless design which we will be using for our other components.
+
+Communication:
+1. Inventory updates will be done using direct API communication with the internal services.
+2. All other communications between the integrators and the internal services will be asynchronous using an Event driven design.
 
 ## Consequences
 Advantages:

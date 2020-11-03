@@ -1,7 +1,7 @@
 # Use of Serverless Architecture
 
 ## Status
-_PROPOSED_
+_ACCEPTED_
 
 ## Context
 For a new business, having quick development cycles is vital in order to iterate by adjusting the target of the offer according to real customer needs. Focusing capitals and attention more to the main business and less to NFRs (deployment/maintanability/security) but delivering an elastic and scalable solution which doesn't need further costs/time for development and maintain a high available system are all key factor to success.

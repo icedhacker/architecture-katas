@@ -1,7 +1,7 @@
 # Inventory Reservations Communication
 
 ## Status
-_PROPOSED_
+_ACCEPTED_
 
 ## Context
 Farmacy food inventory service will be a critical component for all the operations in the entire system.

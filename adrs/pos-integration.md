@@ -1,7 +1,7 @@
 # Integration with the Points of Sale (Smart Fridge & Kiosks)
 
 ## Status
-_PROPOSED_
+_ACCEPTED_
 
 ## Context
 The meals provided by Farmacy foods can be sold from multiple Points of Sale:

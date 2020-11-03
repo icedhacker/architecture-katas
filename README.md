@@ -1,4 +1,4 @@
-# Architecture Katas
+# Architecture Katas - Farmacy Food
 
 ## Step 1
 ### Identifying the Users/Clients
@@ -17,7 +17,7 @@
 
 ![High Level Architecture Diagram](image/OverallArchitectureDiagram.png)
 
-Architecture Approach - Decision Records
+Architecture Approach for **Farmacy Food Service** - Decision Records
 1. [Monolithic Design](adrs/monolithic-approach.md)
 2. [Serverless Design](adrs/serverless-approach.md)
 

@@ -80,3 +80,12 @@ Architecture Decisions:
 #### Create Coupons
 
 ![Create Coupons Diagram](sequence-diagrams/coupons-create.png)
+
+## Step 5
+### Components Architecture Characteristics
+
+| Component         | Description                                                                                                                                                    | Architecture Characteristics                                          |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Inventory         | As this is one of the system's core<br>components, it need to be highly available, <br>provide necessary responses to other system services <br>in short time. | 1- Scalability<br>2- Performance<br>3- Availability<br>4- Reliability |
+| Expiry<br>Tracker | This job needs to run daily but should be <br>quick enough to analyze all items that are expired.                                                              | 1- Performance                                                        |
+| Feedback          | This component is highly needed to render the menu,<br>and thus needs to be highly available and performant.                                                   | 1- Performance<br>2- Availability<br>3- Customizable                  |

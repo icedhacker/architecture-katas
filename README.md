@@ -89,3 +89,6 @@ Architecture Decisions:
 | Inventory         | As this is one of the system's core<br>components, it need to be highly available, <br>provide necessary responses to other system services <br>in short time. | 1- Scalability<br>2- Performance<br>3- Availability<br>4- Reliability |
 | Expiry<br>Tracker | This job needs to run daily but should be <br>quick enough to analyze all items that are expired.                                                              | 1- Performance                                                        |
 | Feedback          | This component is highly needed to render the menu,<br>and thus needs to be highly available and performant.                                                   | 1- Performance<br>2- Availability<br>3- Customizable                  |
+| User Profile | User Profile will provide users' data and authentication services | 1- Availability<br>2- Performance<br>3- Reliability<br> 4- Scalability
+| Coupons | Coupons service will be used mainly to create promotional coupons and validate them. | 1- Availability<br>2- Reliability<br>3- Customizable
+| Menu Catalog | Menu Catalog will hold the menu for all enabled items and it will manage adding/removing/disabiling menu items as well as listing menu items for customers. | 1- Availability<br>2- Performance<br>3- Customizable<br>4- Scalability<br>5- Reliability

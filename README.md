@@ -1,5 +1,26 @@
 # Architecture Katas - Farmacy Food
 
+## Presentation
+[View Presentation](https://drive.google.com/drive/folders/1iaBb1ZlPgxhvYSS1HB35YBBvyU9GvBhq?usp=sharing)
+
+## Overview
+![Overview](image/FarmacyFoods_Overview.png)
+
+Farmacy Food is a tech-enabled healthy food startup that creates tasty meals around people's dietary needs and active lifestyles to support their overall well-being.
+
+Their mission is to make health and wellness radically affordable and accessible.
+
+Let me explain the basic concept of Farmacy Food:
+1. Farmacy Food is a “Ghost Kitchen” which will prepare the meals.
+2. We use Smart Fridges and Sub-let spaces in other businesses as our Points of Sale. So, the meals are delivered to these POS from the Kitchen.
+3. Customers will check availability of meals using Mobile/Web App in the nearby Points of Sale.
+4. Customers go to the nearest available POS and purchase or pick-up the meals.
+5. The system has to maintain the inventory levels in the Smart Fridge and other POS.
+
+Some Long Term goals are: 
+1. Allowing multiple vendors or kitchens to provide meals using our system.
+2. Provide personalized recommendation based on user profile & purchase history.
+
 ## Step 1
 ### Identifying the Users/Clients
 1. Customers
